@@ -1,0 +1,244 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+    --BACK:#FBAED2;
+    --SMOKE:#E5E4E2;
+    --BLACK:black;
+    --WHIT:white;
+}
+body{
+    width:100vw;
+    height:100vh;
+    font-style: italic;
+    font-family: times;
+    background-image: url("360_F_503913447_WkM7sr392iLZJMqK3SIZMLe1yn9hv8gz.jpg");
+ /* background-color:#A4DDED;*/
+}
+html{
+    scroll-behavior: smooth;
+}
+/* HOME PAGE */
+.title h3{
+    background-color: var(--BLACK);
+    color: var(--WHIT);
+    text-align: center;
+    padding:1rem;
+    width:100vw;
+    position: fixed;
+    top:0;
+}
+.nav{
+    text-align: center;
+    line-height: 3rem;
+    margin-top:3.6rem;
+}
+.nav a{
+    text-decoration: none;
+    color:black;
+    background-color: var(--SMOKE);
+    display:block;
+    border-bottom:2px double var(--BLACK);
+    font-weight: bold;
+}
+.main img{
+    width:50%;
+    height:auto;
+    margin:2rem 25%;
+    border-radius:50%;
+    border:2px double var(--BLACK);
+}
+.main p{
+    margin: auto 1rem;
+    text-align: justify;
+    line-height: 2rem;
+}
+.fix{
+    position:fixed;
+    bottom:0;
+    background-color: var(--BLACK);
+    color: var(--WHIT);
+    width:100vw;
+    padding:1rem;
+    text-align: center;
+}
+/* ABOUT */
+.about h2{
+  /*  background-color: var(--BACK);*/
+    text-align: center;
+    padding:1rem;
+    width:100vw;
+}
+
+.about p{
+    line-height:2rem;
+    margin:1rem 1rem;
+    text-align: justify;
+}
+.home a{
+    text-decoration: none;
+    color: var(--BLACK);
+    font-weight:bold ;
+}
+.home {
+    text-align: center;
+    padding:1rem;
+}
+.home a:hover{
+    background-color: var(--BLACK);
+    color:var(--WHIT);
+}
+/* BLOUSE */
+.select h2{
+  /*  background-color: var(--BACK);*/
+  /*  text-align: center;
+    padding:1rem;*/
+    background-color: var(--BLACK);
+    color: var(--WHIT);
+    text-align: center;
+    padding:0.8rem;
+    width:100vw;
+    position: fixed;
+    top:0;
+}
+.come a{
+    text-decoration: none;
+    color: var(--BLACK);
+    font-weight:bold ;
+        
+}
+.come {
+    text-align: center;
+    padding:1rem;
+    margin-top:3rem;
+}
+.come a:hover{
+    background-color: var(--BLACK);
+    color:var(--WHIT);
+}
+.images img{
+    width:330px;
+    height:200px;
+    border: 3px solid black;
+    transition:transform 0.3s linear;
+}
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.images img:active {
+    transform: scale(1.5);
+}
+.images figcaption{
+    text-align: center;
+}
+.fix a{
+    text-decoration: none;
+    color:var(--WHIT);
+    display:block;
+}
+/* CONTACT */
+.cnct h2{
+   /* background-color: var(--BACK);*/
+    text-align: center;
+    padding:1rem;
+}
+.cnct{
+    text-align: center;
+    line-height:2rem;
+}
+.cnct address{
+    border:2px double var(--BLACK);
+    padding:1rem;
+    margin:2rem 2rem;
+    background-color: var(--SMOKE);
+}
+.cnct a{
+    text-decoration: none;
+    color:var(--BLACK);
+    border: 2px double var(--BLACK);
+    width:80%;
+    display:block;
+    margin:1rem 10%;
+    background-color: var(--SMOKE);
+}
+/* PRICE */
+.price h2{
+  /*  background-color: var(--BACK);*/
+    text-align: center;
+    padding:1rem;
+}
+.price{
+    text-align: center;
+}
+.price h3{
+    margin-top:2rem;
+}
+.price p{
+    line-height:1.5rem;
+}
+.note{
+    margin:5rem 2rem;
+    text-align: justify;
+}
+/* DESKTOP SITE */
+@media (min-width:1024px){
+    body{
+       background-image: url("360_F_503913447_WkM7sr392iLZJMqK3SIZMLe1yn9hv8gz.jpg");
+       background-repeat: no-repeat;    
+       background-size: cover;
+    }
+    /* HOME */
+    .title h3{
+        font-size:2rem;
+    }
+    .main{
+        width:100vw;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content:space-evenly;
+    }
+    .main img{
+        width:20%;
+        margin-left:10%;
+    }
+    .main p{
+        margin-right:10%;
+    }
+    .nav{
+        margin-top:4.8rem;
+    }
+    /* ABOUT */
+    .about p{
+        margin:5% 10%;
+    }
+    /* BLOUSE */
+    .images{
+        display:flex;
+        flex-flow: column nowrap;
+    }
+    .images img{
+        width:800px;
+        height:600px;
+    }
+    .images figcaption{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    /* CONTACT */
+    .cnct{
+        margin:auto 20%;
+    }
+    /* PRICE */
+    .note{
+        margin:5% 20%;
+    }
+}
+
+
+
+
